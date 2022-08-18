@@ -3,6 +3,10 @@
 k2（kubernetes-tools）是围绕 kubernetes 运维工具，目前包含的功能有：
 - 合并多个 kubeconfig 文件
 - 从 serviceaccount 生成 kubeconfig 文件
+## 安装
+```bash
+go install github.com/srcio/k2@latest
+```
 ## 使用
 ### config
 `k2 config` 命令包含一些围绕 `kubeconfig` 文件的运维操作。
