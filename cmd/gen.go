@@ -108,7 +108,7 @@ func buildConfigFromSecret(kubecfg *rest.Config, secret *corev1.Secret) clientcm
 		Kind:           "Config",
 		CurrentContext: cfgContext,
 		Contexts: map[string]*clientcmdapi.Context{
-			"cfgContext": {
+			cfgContext: {
 				Cluster:   cfgCluster,
 				AuthInfo:  cfgUser,
 				Namespace: string(secret.Data["namespace"]),
